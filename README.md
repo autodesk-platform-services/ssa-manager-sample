@@ -1,11 +1,16 @@
 
 
-# SSA Manager
+# SSA Manager Sample
 
 **SSA Manager** is a simple web-based tool that helps you manage **Secure Service Accounts (SSAs)** for Autodesk Platform Services (APS). It provides a developer-friendly interface to create service accounts, manage keys, and generate access tokens.
 
 > Maintained by the Autodesk Developer Advocate Support Team  
 > Licensed under the [MIT License](LICENSE)
+
+---
+<kbd>
+<img width="1290" alt="Image" src="https://github.com/user-attachments/assets/ffb940d2-3421-4b37-a8d1-c94e9d43eb64" />
+</kbd>
 
 ---
 
@@ -25,11 +30,6 @@
     ```
   - Use the `Copy Token` button to copy the `access_token` value to your clipboard.  
   - You can also open the token in [jwt.io](https://jwt.io) to inspect its claims.
-
----
-<kbd>
-<img border="2px" width="1660" alt="Image" src="https://github.com/user-attachments/assets/3b9be166-9d98-48b7-ab23-08db56ea031a" />
-</kbd>
 
 ---
 
