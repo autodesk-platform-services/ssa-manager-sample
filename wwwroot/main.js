@@ -92,7 +92,7 @@ function removeAccount() {
 
 const createAccount = document.getElementById("create-account");
 createAccount.onclick = async () => {
-    const firsttName = document.getElementById("first-name").value;
+    const firstName = document.getElementById("first-name").value;
     const lastName = document.getElementById("last-name").value;
 
     try {
@@ -104,8 +104,8 @@ createAccount.onclick = async () => {
                     Authorization: `Bearer ${accessToken}`,
                 },
                 body: JSON.stringify({
-                    name: firsttName + '_' + lastName,
-                    firstName: firsttName,
+                    name: firstName + '_' + lastName,
+                    firstName: firstName,
                     lastName: lastName,
                 }),
             }
