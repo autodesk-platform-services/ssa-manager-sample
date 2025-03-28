@@ -1,5 +1,3 @@
-
-
 # SSA Manager Sample
 
 **SSA Manager** is a simple web-based tool that helps you manage **Secure Service Accounts (SSAs)** for Autodesk Platform Services (APS). It provides a developer-friendly interface to create service accounts, manage keys, and generate access tokens.
