@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://cdn.autodesk.io/favicon.ico"
+        />
+        <link rel="stylesheet" href="/main.css" />
+        <title>Sample SSA Management Tool</title>
+    </head>
+
+    <body>
+        <div id="header">
+            <img
+                class="logo"
+                src="https://cdn.autodesk.io/logo/black/stacked.png"
+                alt="Autodesk Platform Services"
+            />
+            <span class="title">Sample SSA Management Tool</span>
+            <form id="login-form" title="Log In">
+                <input
+                    name="username"
+                    title="Client Id"
+                    id="client-id"
+                    placeholder="Client Id"
+                    autocomplete="true"
+                />
+                <input
+                    name="password"
+                    type="password"
+                    title="Client Secret"
+                    placeholder="Client Secret"
+                    id="client-secret"
+                    autocomplete="true"
+                />
+                <button type="button" id="login" title="Log In">Log In</button>
+                <a
+                    href="https://github.com/adamenagy/ssa-manager"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="GitHub Repository"
+                >
+                    <img
+                        class="logo"
+                        alt="Autodesk Platform Services"
+                        src="/img/GitHub_Logo.png"
+                        height="25"
+                    />
+                </a>
+            </form>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h1>Accounts</h1>
+                <select
+                    class="fill"
+                    id="accounts-list"
+                    title="Accounts"
+                    size="10"
+                ></select>
+            </div>
+            <div class="grid-item">
+                <h1>Account Details</h1>
+                <textarea
+                    class="fill"
+                    id="account-details"
+                    title="Account Details"
+                    readonly
+                ></textarea>
+            </div>
+            <div class="grid-item grid-item-2">
+                <button
+                    class="control"
+                    type="button"
+                    id="delete-account"
+                    title="Delete Account"
+                >
+                    Delete Selected Account
+                </button>
+                <button
+                    class="control"
+                    type="button"
+                    id="create-account"
+                    title="Create Account"
+                >
+                    Create Account With Name:
+                </button>
+                <input
+                    class="control"
+                    id="first-name"
+                    title="First Name"
+                    placeholder="First Name"
+                />
+                <input
+                    class="control"
+                    id="last-name"
+                    title="Last Name"
+                    placeholder="Last Name"
+                />
+                <button
+                    class="control"
+                    type="button"
+                    id="enable-disable-account"
+                    title="Enable/Disable Account"
+                >
+                    Enable/Disable Account
+                </button>
+            </div>
+            <div class="grid-item">
+                <h1>Keys</h1>
+                <select
+                    class="fill"
+                    id="keys-list"
+                    title="Keys"
+                    size="10"
+                ></select>
+            </div>
+            <div class="grid-item">
+                <h1>Key Details</h1>
+                <textarea
+                    class="fill"
+                    id="key-details"
+                    title="Key Details"
+                    readonly
+                ></textarea>
+            </div>
+            <div class="grid-item grid-item-2">
+                <button
+                    class="control"
+                    type="button"
+                    id="delete-key"
+                    title="Delete Key"
+                >
+                    Delete Selected Key
+                </button>
+                <button
+                    class="control"
+                    type="button"
+                    id="create-key"
+                    title="Create Key"
+                >
+                    Create Key
+                </button>
+                <button
+                    class="control"
+                    type="button"
+                    id="enable-disable-key"
+                    title="Enable/Disable Key"
+                >
+                    Enable/Disable Key
+                </button>
+            </div>
+            <div class="grid-item">
+                <h1>Private Key</h1>
+                <textarea
+                    class="fill"
+                    id="private-key"
+                    title="Private Key"
+                ></textarea>
+            </div>
+            <div class="grid-item">
+                <h1>Access Token</h1>
+                <textarea
+                    class="fill"
+                    id="access-token"
+                    title="Access Token"
+                    readonly
+                ></textarea>
+            </div>
+            <div class="grid-item grid-item-1">
+                <button
+                    class="control"
+                    type="button"
+                    id="load-pem"
+                    title="Load Pem"
+                >
+                    Load From File
+                </button>
+                <input
+                    class="invisible"
+                    type="file"
+                    id="file-input"
+                    title="Pem File"
+                />
+            </div>
+            <div class="grid-item grid-item-1">
+                <button
+                    class="control"
+                    type="button"
+                    id="create-token"
+                    title="Create Token"
+                >
+                    Create Token With Scopes:
+                </button>
+                <input
+                    class="control"
+                    id="scopes"
+                    title="Scopes"
+                    placeholder="data:read data:create data:write"
+                    value="data:read data:create data:write"
+                />
+                <button
+                    class="control"
+                    type="button"
+                    id="copy-token"
+                    title="Copy Token To Clipboard"
+                >
+                    Copy Token
+                </button>
+                <button
+                    class="control"
+                    type="button"
+                    id="open-jwt-io"
+                    title="Open On jwt.io"
+                >
+                    Open On jwt.io
+                </button>
+            </div>
+        </div>
+        <script src="/main.js" type="module"></script>
+    </body>
+</html>
